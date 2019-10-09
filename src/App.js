@@ -102,7 +102,7 @@ function App() {
         <h3 style={{marginTop: 0 }}>Please Log In to your account</h3>
         </div>
           <Grid container>
-            <Grid item xs={12} sm={6}>
+            <Grid item xs={12} sm={6} style={{ display: "flex"}}>
               <Button
                 style={{
                   backgroundColor: "#3C5A99"
@@ -111,11 +111,11 @@ function App() {
                 variant="contained"
                 className={classes.submit}
               >
-                <img  src={FaceBookIcon} style={{height: 35, width: 35, marginLeft: 10}}/>
-                Login with FaceBook
+                <img  src={FaceBookIcon} style={{height: 35, width: 35, display: "block"}}/>
+                <div style={{flexGrow: 1}}>Login with FaceBook</div>
               </Button>
             </Grid>
-            <Grid item xs={12} sm={6}>
+            <Grid item xs={12} sm={6} style={{ display: "flex"}}>
               <Button
                 style={{
                   backgroundColor: "#F42D2D"
@@ -124,13 +124,13 @@ function App() {
                 variant="contained"
                 className={classes.submit}
               >
-              <img  src={GoogleIcon} style={{height: 35, width: 35, marginRight: 9}}/>
-                Login with Google
+              <img  src={GoogleIcon} style={{height: 35, width: 35, marginRight: 10}}/>
+                <div style={{flexGrow: 1}}>Login with Google</div>
               </Button>
             </Grid>
           </Grid>
           <Grid container>
-            <Grid item xs={12} sm={6}>
+            <Grid item xs={12} sm={6} style={{ display: "flex"}}>
               <Button
                 style={{
                   backgroundColor: "#22A7F7",
@@ -140,11 +140,10 @@ function App() {
                 className={classes.submit}
               >
               <img  src={TwitterIcon} style={{height: 35, width: 35, marginRight: 10}}/>
-                Login with <br/>
-                Twitter
+                <div style={{flexGrow: 1}}>Login with Twitter</div>
               </Button>
             </Grid>
-            <Grid item xs={12} sm={6}>
+            <Grid item xs={12} sm={6} style={{ display: "flex"}}>
               <Button
                 style={{
                   backgroundColor: "#0077B5",
@@ -153,8 +152,8 @@ function App() {
                 variant="contained"
                 className={classes.submit}
               >
-              <img  src={InIcon} style={{height: 35, width: 35, marginRight: 9}}/>
-                Login with LinkedIn
+              <img  src={InIcon} style={{height: 35, width: 35, marginRight: 10}}/>
+                <div style={{flexGrow: 1}}>Login with LinkedIn</div>
               </Button>
             </Grid>
           </Grid>
